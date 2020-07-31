@@ -1,5 +1,6 @@
 .Logo {
     max-width: 100px;
+    padding-top: 5px;
 }
 
 @media (max-width: 980px) {
@@ -66,9 +67,9 @@
     cursor: default;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 740px) {
     .Menu {
-        height: 41px;
+        height: 51px;
     }
 }
 

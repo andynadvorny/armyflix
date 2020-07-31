@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PageDefault from '../../components/PageDefault';
 import PageTitle from '../../components/PageTitle';
+import PageDescription from '../../components/PageDescription';
 import FormField from '../../components/FormField';
 import Button from '../../components/Button';
 
@@ -48,6 +49,9 @@ function NewCategory() {
           {newCategoryData.label}
         </h1>
       </PageTitle>
+      <PageDescription>
+        Didn&apos;t findn the category you want? Register a new one by filling out the form bellow:
+      </PageDescription>
       <form onSubmit={function handleSubmit(changeInfo) {
         changeInfo.preventDefault();
         setCategories([

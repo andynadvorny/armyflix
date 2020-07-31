@@ -44,6 +44,7 @@ ContentAreaContainer.Category = styled.h1`
 ContentAreaContainer.Description = styled.p`
   max-width: 300px;
   margin-top: 0;
+  margin-bottom: 24px;
 
   @media (max-width: 800px) {
     display: none;
@@ -99,7 +100,7 @@ export const BannerMainContainer = styled.section`
   }
 `;
 
-export const PlayButton = styled.button`
+export const PlayButton = styled.a`
   border: 1px solid transparent;
   border-radius: 4px;
   background-color: var(--white);
@@ -107,6 +108,8 @@ export const PlayButton = styled.button`
   cursor: pointer;
   font-size: 15px;
   font-weight: bold;
+  text-decoration: none;
+  color: var(--black);
 
   > i {
     margin-right: 5px;
@@ -121,9 +124,10 @@ export const PlayButton = styled.button`
   }
 `;
 
-export const WatchMobileButton = styled.button`
+export const WatchMobileButton = styled.a`
   border: 1px solid transparent;
   border-radius: 4px;
+  color: var(--black);
   background-color: var(--white);
   padding: 8px 24px 8px 20px;
   cursor: pointer;
@@ -132,6 +136,9 @@ export const WatchMobileButton = styled.button`
   transition: opacity .3s;
   display: none;
   margin: 0 auto;
+  text-decoration: none;
+  text-align: center;
+  max-width: 98px;
 
   &:hover {
     opacity: .7;

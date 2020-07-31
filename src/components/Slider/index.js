@@ -32,6 +32,16 @@ const Container = styled.ul`
     height: 100%;
   }
 
+  @media (max-width: 640px) {
+    .slick-prev, .slick-next {
+      background-color: #00000000;
+    }
+    
+    .slick-prev:before, .slick-next:before {
+      display: none;
+    }
+  }
+
   .slick-prev:before {
     font-family: "Font Awesome\ 5 Free";
     content: "\f053";
@@ -68,32 +78,32 @@ const settings = {
       breakpoint: 1600,
       settings: {
         slidesToShow: 5,
-        slidesToScroll: 4
-      }
+        slidesToScroll: 4,
+      },
     },
     {
       breakpoint: 1250,
       settings: {
         slidesToShow: 4,
-        slidesToScroll: 3
-      }
+        slidesToScroll: 3,
+      },
     },
     {
       breakpoint: 950,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 2
-      }
+        slidesToScroll: 2,
+      },
     },
     {
       breakpoint: 640,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 1
-      }
-    }
-  ]
-}
+        slidesToScroll: 1,
+      },
+    },
+  ],
+};
 
 const Slider = ({ children }) => (
   <Container>
@@ -103,4 +113,4 @@ const Slider = ({ children }) => (
   </Container>
 );
 
-export default Slider; 
+export default Slider;

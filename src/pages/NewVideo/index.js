@@ -56,12 +56,12 @@ function NewVideo() {
           onChange={handleChange}
         />
 
-        <button>
+        <Button solid big>
           Save
-        </button>
+        </Button>
       </form>
 
-      <Button as={Link} to="/register/category">New Category</Button>
+      <Button solid as={Link} to="/register/category">New Category</Button>
     </PageDefault>
   );
 }

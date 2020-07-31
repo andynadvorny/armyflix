@@ -60,9 +60,7 @@ const Input = styled.input`
     ::-webkit-color-swatch {
       border: none;border-radius:4px;
     }
-}
-
-  }
+  } 
   
   &:focus {
     border-color: var(--primary);

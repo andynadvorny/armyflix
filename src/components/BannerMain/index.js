@@ -1,6 +1,8 @@
 import React from 'react';
 import VideoIframeResponsive from './components/VideoIframeResponsive';
-import { BannerMainContainer, ContentAreaContainer, WatchMobileButton, PlayButton } from './styles';
+import {
+  BannerMainContainer, ContentAreaContainer, WatchMobileButton, PlayButton,
+} from './styles';
 import MainTitle from '../../assets/img/MainTitle.png';
 
 function getYouTubeId(youtubeURL) {
@@ -17,7 +19,7 @@ export default function BannerMain({
   url,
 }) {
   const youTubeID = getYouTubeId(url);
-  const bgUrl = `https://i.ytimg.com/vi/7UWBYJjuIL0/maxresdefault.jpg`;
+  const bgUrl = 'https://i.ytimg.com/vi/7UWBYJjuIL0/maxresdefault.jpg';
 
   return (
     <BannerMainContainer backgroundImage={bgUrl}>
@@ -30,8 +32,10 @@ export default function BannerMain({
           <ContentAreaContainer.Description>
             {videoDescription}
           </ContentAreaContainer.Description>
-          <PlayButton>
-          <i class="fas fa-play"></i> Play
+          <PlayButton href={url} target="_blank">
+            <i className="fas fa-play" />
+            {' '}
+            Play
           </PlayButton>
         </ContentAreaContainer.Item>
 
@@ -39,7 +43,7 @@ export default function BannerMain({
           <VideoIframeResponsive
             youtubeID={youTubeID}
           />
-          <WatchMobileButton>
+          <WatchMobileButton href={url} target="_blank">
             Assistir
           </WatchMobileButton>
         </ContentAreaContainer.Item>

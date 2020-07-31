@@ -1,11 +1,10 @@
 import styled from 'styled-components';
 
-const Button = styled.a`
+const Button = styled.button`
     color: var(--white);
     border: 1px solid var(--white);
     box-sizing: border-box;
     cursor: pointer;
-    padding: 8px 12px;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -18,10 +17,11 @@ const Button = styled.a`
     &:hover,
     &:focus {
     opacity: .5;
-
-    .lightBG {
-      color: var(--black);
     }
+
+    background: ${(props) => (props.solid ? 'var(--primary)' : 'transparent')};
+    padding: ${(props) => (props.big ? '12px 16px' : '8px 12px;')};
+    min-width: ${(props) => (props.big ? '98px' : '')};
 `;
 
 export default Button;
