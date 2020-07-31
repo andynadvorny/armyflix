@@ -6,10 +6,10 @@
 }
 
 :root {
-  --primary: #2A7AE4;
+  --primary: #64027f;
   --black: #000000;
   --blackLighter: #9E9E9E;
-  --grayLight: #F5F5F5;
+  --grayLight: #8c8c8c;
   --grayMedium: #767676; 
   --grayDark: #141414;
   --white: #FFFFFF;
@@ -40,12 +40,4 @@ code {
   height: 100vh;
   display: flex;
   flex-direction: column;
-}
-
-input, button, textarea {
-  border: none;
-}
-
-input:focus, textarea:focus {
-  outline: none;
 }

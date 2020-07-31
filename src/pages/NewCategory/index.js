@@ -6,8 +6,8 @@ import Button from '../../components/Button';
 
 function NewCategory() {
   const initialValues = {
-    label: ' ',
-    description: ' ',
+    label: '',
+    description: '',
     color: '#000000',
   };
   const [categories, setCategories] = useState([]);
@@ -28,7 +28,9 @@ function NewCategory() {
   }
 
   useEffect(() => {
-    const URL = 'http://localhost:8080/categories';
+    const URL = window.location.hostname.includes('localhost')
+      ? 'http://localhost:8080/categories'
+      : 'https://armyflix.herokuapp.com/categories';
     fetch(URL)
       .then(async (serverResponse) => {
         const response = await serverResponse.json();

@@ -7,8 +7,10 @@ const Main = styled.main`
     background-color: var(--white);
     color: var(--black);
 
-    padding: 0 4%;
+    padding: 0 4% 50px 4%;
     min-height: calc(100vh - 147px);
+
+    overflow-y: auto;
 
     @media (max-width: 800px) {
         min-height: calc(100vh - 197px);
