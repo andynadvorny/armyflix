@@ -1,0 +1,395 @@
+{
+  "categorias": [
+    {
+      "titulo": "Official MVs",
+      "link": "https://www.youtube.com/channel/UC3IZKseVpdzPSBaWxBxundA",
+      "cor": "#6BD1FF",
+      "videos": [
+        {
+          "titulo": "We Are Bulletproof: The Eternal",
+          "url": "https://www.youtube.com/watch?v=7UWBYJjuIL0"
+        },
+        {
+          "titulo": "Stay Gold",
+          "url": "https://www.youtube.com/watch?v=9IHwqdz8Xhw"
+        },
+        {
+          "titulo": "Black Swan",
+          "url": "https://www.youtube.com/watch?v=0lapF4DQPKQ"
+        },
+        {
+          "titulo": "ON",
+          "url": "https://www.youtube.com/watch?v=mPVDGOVjRQ0"
+        },
+        {
+          "titulo": "Make It Right (feat. Lauv)",
+          "url": "https://www.youtube.com/watch?v=eXBu09fwe3I"
+        },
+        {
+          "titulo": "Boy With Luv (feat. Halsey) ('ARMY With Luv' ver.)",
+          "url": "https://www.youtube.com/watch?v=62E_xyj_oDA"
+        },
+        {
+          "titulo": "IDOL (Feat. Nicki Minaj)",
+          "url": "https://www.youtube.com/watch?v=K1scjjbfNsk"
+        },     
+        {
+          "titulo": "IDOL",
+          "url": "https://www.youtube.com/watch?v=pBuZEGYXA6E"
+        },  
+        {
+          "titulo": "Fake Love",
+          "url": "https://www.youtube.com/watch?v=7C2z4GqqS5E"
+        },  
+        {
+          "titulo": "MIC Drop (Steve Aoki Remix)",
+          "url": "https://www.youtube.com/watch?v=kTlv5_Bs8aw"
+        },  
+        {
+          "titulo": "DNA",
+          "url": "https://www.youtube.com/watch?v=MBdVXkSdhwU"
+        },  
+        {
+          "titulo": "Not Today",
+          "url": "https://www.youtube.com/watch?v=9DwzBICPhdM"
+        },  
+        {
+          "titulo": "봄날 (Spring Day)",
+          "url": "https://www.youtube.com/watch?v=xEeFrLSkMm8"
+        },  
+        {
+          "titulo": "피 땀 눈물 (Blood Sweat & Tears)",
+          "url": "https://www.youtube.com/watch?v=hmE9f-TEutc"
+        },  
+        {
+          "titulo": "Save ME",
+          "url": "https://www.youtube.com/watch?v=GZjt_sA2eso"
+        },  
+        {
+          "titulo": "불타오르네 (FIRE)",
+          "url": "https://www.youtube.com/watch?v=4ujQOR2DMFM"
+        },  
+        {
+          "titulo": "EPILOGUE : Young Forever",
+          "url": "https://www.youtube.com/watch?v=LbvE0FV_70U"
+        },  
+        {
+          "titulo": "RUN",
+          "url": "https://www.youtube.com/watch?v=wKysONrSmew"
+        },  
+        {
+          "titulo": "쩔어",
+          "url": "https://www.youtube.com/watch?v=H8lYMWZD5P8"
+        },  
+        {
+          "titulo": "I NEED U",
+          "url": "https://www.youtube.com/watch?v=jjskoRh8GTE"
+        },  
+        {
+          "titulo": "호르몬전쟁",
+          "url": "https://www.youtube.com/watch?v=Hhph0_CdUHg"
+        },  
+        {
+          "titulo": "Danger",
+          "url": "https://www.youtube.com/watch?v=43r6lXilbcQ"
+        },  
+        {
+          "titulo": "하루만 (Just one day)",
+          "url": "https://www.youtube.com/watch?v=dzAwJW107nk"
+        },  
+        {
+          "titulo": "상남자 (Boy In Luv)",
+          "url": "https://www.youtube.com/watch?v=LHHjp3IMjMk"
+        },  
+        {
+          "titulo": "N.O",
+          "url": "https://www.youtube.com/watch?v=r5GaAEHvHj0"
+        },  
+        {
+          "titulo": "We Are Bulletproof Pt.2",
+          "url": "https://www.youtube.com/watch?v=lE9lkSdtZeQ"
+        },  
+        {
+          "titulo": "No More Dream",
+          "url": "https://www.youtube.com/watch?v=rBG5L7UsUxA"
+        }    
+      ]
+    },
+    {
+      "titulo": "Comeback Trailers",
+      "cor": "#00C86F",
+      "videos": [
+        {
+          "titulo": "Outro: Ego",
+          "url": "https://www.youtube.com/watch?v=LmApDbvNCXg"
+        },
+        {
+          "titulo": "Interlude: Shadow",
+          "url": "https://www.youtube.com/watch?v=PV1gCvzpSy0"
+        },
+        {
+          "titulo": "Intro: Persona",
+          "url": "https://www.youtube.com/watch?v=M9Uy0opVF3s"
+        },
+        {
+          "titulo": "Epiphany",
+          "url": "https://www.youtube.com/watch?v=fIkZOLsnoqY"
+        }, 
+        {
+          "titulo": "Singularity",
+          "url": "https://www.youtube.com/watch?v=p8npDG2ulKQ"
+        },
+        {
+          "titulo": "Euphoria",
+          "url": "https://www.youtube.com/watch?v=kX0vO4vlJuU"
+        }, 
+        {
+          "titulo": "Serendipity",
+          "url": "https://www.youtube.com/watch?v=BEMaH9Sm3lQ"
+        }, 
+        {
+          "titulo": "Boy Meets Evil",
+          "url": "https://www.youtube.com/watch?v=iJJSh-eEdRk"
+        }, 
+        {
+          "titulo": "Never Mind",
+          "url": "https://www.youtube.com/watch?v=LOadwTF77tw"
+        }, 
+        {
+          "titulo": "What Am I To You",
+          "url": "https://www.youtube.com/watch?v=_3OLpHsAR54"
+        }, 
+        {
+          "titulo": "Skool Luv Affair",
+          "url": "https://www.youtube.com/watch?v=4lKeF2CDGbk"
+        }, 
+        {
+          "titulo": "O!RUL8,2?",
+          "url": "https://www.youtube.com/watch?v=DHAk3T_gqBQ"
+        }
+      ]
+    },
+    {
+      "titulo": "BU Videos",
+      "cor": "#9cd33b",
+      "videos": [
+        {
+          "titulo": "I NEED U",
+          "url": "https://www.youtube.com/watch?v=jjskoRh8GTE"
+        },
+        {
+          "titulo": "화양연화 on stage: Prologue",
+          "url": "https://www.youtube.com/watch?v=Bt8648TNX1M"
+        },
+        {
+          "titulo": "RUN",
+          "url": "https://www.youtube.com/watch?v=wKysONrSmew"
+        },
+        {
+          "titulo": "I NEED U (Japanese Ver.)",
+          "url": "https://www.youtube.com/watch?v=LYAcYSmaLoc"
+        },
+        {
+          "titulo": "RUN (Japanese Ver.)",
+          "url": "https://www.youtube.com/watch?v=a16gTN7kOWU"
+        },
+        {
+          "titulo": "Epilogue: Young Forever",
+          "url": "https://www.youtube.com/watch?v=LbvE0FV_70U"
+        },
+        {
+          "titulo": "Wings Short Film #1 BEGIN",
+          "url": "https://www.youtube.com/watch?v=yR73I0z5ms0"
+        },
+        {
+          "titulo": "Wings Short Film #2 LIE",
+          "url": "https://www.youtube.com/watch?v=_y8-HD5O69g"
+        },
+        {
+          "titulo": "Wings Short Film #3 STIGMA",
+          "url": "https://www.youtube.com/watch?v=3i34dFsjRY4"
+        },
+        {
+          "titulo": "Wings Short Film #4 FIRST LOVE",
+          "url": "https://www.youtube.com/watch?v=7VPcnJ9oJ-k"
+        },
+        {
+          "titulo": "Wings Short Film #5 REFLECTION",
+          "url": "https://www.youtube.com/watch?v=wzxjM-82RW8"
+        },
+        {
+          "titulo": "Wings Short Film #6 MAMA",
+          "url": "https://www.youtube.com/watch?v=wu82g0vyyTY"
+        },
+        {
+          "titulo": "Wings Short Film #7 AWAKE",
+          "url": "https://www.youtube.com/watch?v=WYbrLlVelYk"
+        },
+        {
+          "titulo": "피 땀 눈물 (Blood Sweat & Tears)",
+          "url": "https://www.youtube.com/watch?v=hmE9f-TEutc"
+        },
+        {
+          "titulo": "血、汗、涙 (Blood Sweat & Tears) (Japanese Ver.)",
+          "url": "https://www.youtube.com/watch?v=7OX7dIRReSA"
+        },
+        {
+          "titulo": "LOVE YOURSELF Highlight Reel '起承轉結'",
+          "url": "https://www.youtube.com/watch?v=EHdK5U2hf4o"
+        },
+        {
+          "titulo": "Euphoria: Theme of LOVE YOURSELF 起 Wonder",
+          "url": "https://www.youtube.com/watch?v=kX0vO4vlJuU"
+        },
+        {
+          "titulo": "Fake Love (Official Teaser 1)",
+          "url": "https://www.youtube.com/watch?v=BP71K87Hp5Y"
+        },
+        {
+          "titulo": "Fake Love (Extended Ver.)",
+          "url": "https://www.youtube.com/watch?v=D_6QmL6rExk"
+        },
+        {
+          "titulo": "LOVE YOURSELF 結 Answer: Epiphany",
+          "url": "https://www.youtube.com/watch?v=fIkZOLsnoqY"
+        }
+      ]
+    },
+    {
+      "titulo": "Mixtapes & Solo Songs",
+      "cor": "orange",
+      "videos": [
+        {
+          "titulo": "대취타 - Agust D",
+          "url": "https://www.youtube.com/watch?v=qGjAWJ2zWWI"
+        },
+        {
+          "titulo": "Chicken Noodle Soup (feat. Becky G) - J-Hope",
+          "url": "https://www.youtube.com/watch?v=i23NEQEFpgQ"
+        },
+        {
+          "titulo": "Winter Bear - V",
+          "url": "https://www.youtube.com/watch?v=pk7ESz6vtyA"
+        },
+        {
+          "titulo": "moonchild - RM",
+          "url": "https://www.youtube.com/watch?v=G9ntaxClfrA"
+        },
+        {
+          "titulo": "seoul (prod. HONNE) - RM",
+          "url": "https://www.youtube.com/watch?v=F8wI5ZosdRA"
+        },
+        {
+          "titulo": "forever rain - RM",
+          "url": "https://www.youtube.com/watch?v=Cvb76hBX_Oc"
+        },
+        {
+          "titulo": "Airplane - J-Hope",
+          "url": "https://www.youtube.com/watch?v=8O_MwlZ2dEg"
+        },
+        {
+          "titulo": "Daydream (백일몽) - J-Hope",
+          "url": "https://www.youtube.com/watch?v=OK3GJ0WIQ8s"
+        },
+        {
+          "titulo": "Change - RM, Wale",
+          "url": "https://www.youtube.com/watch?v=9rAyprZdo7o"
+        },
+        {
+          "titulo": "give it to me - Agust D",
+          "url": "https://www.youtube.com/watch?v=_Zgc12yL5ss"
+        },
+        {
+          "titulo": "Agust D - Agust D",
+          "url": "https://www.youtube.com/watch?v=3Y_Eiyg4bfk"
+        },
+        {
+          "titulo": "Fantastic (Feat. Mandy Ventrice) - RM",
+          "url": "https://www.youtube.com/watch?v=R3AWPKqD68g"
+        },
+        {
+          "titulo": "P.D.D - RM, Warren G",
+          "url": "https://www.youtube.com/watch?v=WFArWe1MLW8"
+        },
+        {
+          "titulo": "각성 (覺醒) - RM",
+          "url": "https://www.youtube.com/watch?v=JKBM9y3EuDQ"
+        },
+        {
+          "titulo": "Do You - RM",
+          "url": "https://www.youtube.com/watch?v=0XAxf8aFtL4"
+        },
+        {
+          "titulo": "농담 - RM",
+          "url": "https://www.youtube.com/watch?v=TfenCTabhDY"
+        }
+      ]
+    },
+    {
+      "titulo": "Dance Practice",
+      "cor": "red",
+      "videos": [
+        {
+          "titulo": "ON",
+          "url": "https://www.youtube.com/watch?v=VkuEzN8IS_o"
+        },
+        {
+          "titulo": "Boy With Luv",
+          "url": "https://www.youtube.com/watch?v=CzvfbRbEjww"
+        },
+        {
+          "titulo": "IDOL",
+          "url": "https://www.youtube.com/watch?v=bhWXw56puNY"
+        },
+        {
+          "titulo": "MIC Drop",
+          "url": "https://www.youtube.com/watch?v=eRkpkveBWyo"
+        },
+        {
+          "titulo": "Fake Love",
+          "url": "https://www.youtube.com/watch?v=nQySbNGu4g0"
+        },
+        {
+          "titulo": "Not Today",
+          "url": "https://www.youtube.com/watch?v=_PwYjNh1bww"
+        },
+        {
+          "titulo": "뱁새 (흥 ver.)",
+          "url": "https://www.youtube.com/watch?v=V1i_x2_TGE0"
+        },
+        {
+          "titulo": "RUN",
+          "url": "https://www.youtube.com/watch?v=9S3ZhJGv8JM"
+        },
+        {
+          "titulo": "쩔어",
+          "url": "https://www.youtube.com/watch?v=NnbIIXNPtPU"
+        },
+        {
+          "titulo": "호르몬전쟁",
+          "url": "https://www.youtube.com/watch?v=70SMjxn4FBA"
+        },
+        {
+          "titulo": "Danger",
+          "url": "https://www.youtube.com/watch?v=vJwHIpEogEY"
+        },
+        {
+          "titulo": "Beautiful",
+          "url": "https://www.youtube.com/watch?v=sm4FFFBgbmg"
+        },
+        {
+          "titulo": "Just One Day",
+          "url": "https://www.youtube.com/watch?v=zNJMa43UVs0"
+        },
+        {
+          "titulo": "진격의 방탄 (Attack on Bangtan)",
+          "url": "https://www.youtube.com/watch?v=ncRNKuwOEc0"
+        },
+        {
+          "titulo": "We Are Bulletproof Pt.2",
+          "url": "https://www.youtube.com/watch?v=bV9Svms-LYY"
+        }
+      ]
+    }
+  ]
+}

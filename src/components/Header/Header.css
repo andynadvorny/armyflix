@@ -1,0 +1,86 @@
+.Logo {
+    max-width: 100px;
+}
+
+@media (max-width: 980px) {
+    .Logo {
+      max-width: 80px;
+    }
+}
+  
+.Menu {
+    width: 100%;
+    height: 68px;
+    z-index: 100;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 4%;
+
+    background: transparent;
+}
+
+.MenuScrolled {
+    background: var(--grayDark);
+    transition: background-color .4s;
+}
+
+.MenuLight {
+    background: var(--grayDark);
+}
+
+.Links {
+    display: flex;
+    align-items: center;
+}
+
+.PrimaryMenu {
+    display: flex;
+
+    list-style-type: none;
+    color: var(--white);
+}
+
+.PrimaryMenu li {
+    margin-left: 18px;
+    font-size: 14px;
+}
+
+.PrimaryMenu li:hover {
+    color: #b3b3b3;
+}
+
+.PrimaryMenu a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.PrimaryMenu li .active {
+    font-weight: bold;
+    cursor: default;
+}
+
+@media (max-width: 950px) {
+    .Menu {
+        height: 41px;
+    }
+}
+
+@media (max-width: 800px) {
+    a.ButtonLink {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: var(--primary);
+        border-radius: 0;
+        border: 0;
+        text-align: center;
+    }
+}
