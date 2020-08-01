@@ -43,8 +43,8 @@ function NewVideo() {
 
         videosRepository.createNewVideo({
           categoryId: chosenCategory.id,
-          title: 'values.title',
-          url: 'values.url',
+          title: values.title,
+          url: values.url,
         })
           .then(() => {
             console.log('Cadastrou com sucesso!');

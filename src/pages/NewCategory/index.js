@@ -5,6 +5,7 @@ import PageDescription from '../../components/PageDescription';
 import FormField from '../../components/FormField';
 import Button from '../../components/Button';
 import useForm from '../../hooks/useForm';
+import categoriesRepository from '../../repositories/categories';
 
 function NewCategory() {
   const initialValues = {
@@ -43,10 +44,20 @@ function NewCategory() {
       </PageDescription>
       <form onSubmit={function handleSubmit(changeInfo) {
         changeInfo.preventDefault();
+
         setCategories([
           ...categories,
           values,
         ]);
+
+        categoriesRepository.createNewCategory({
+          label: values.label,
+          description: values.description,
+          color: values.color,
+        })
+          .then(() => {
+            console.log('Cadastrou com sucesso!');
+          });
 
         clearForm();
       }}

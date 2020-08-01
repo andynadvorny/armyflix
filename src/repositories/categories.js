@@ -23,7 +23,23 @@ function getAllWithVideos() {
     });
 }
 
+function createNewCategory(categoryObject) {
+  return fetch(`${URLcategories}`, {
+    method: 'POST',
+    headers: {
+      'Content-type': 'application/json',
+    },
+    body: JSON.stringify(categoryObject),
+  })
+    .then(async (respostaDoServidor) => {
+      const resposta = await respostaDoServidor.json();
+
+      return resposta;
+    });
+}
+
 export default {
   getAll,
   getAllWithVideos,
+  createNewCategory,
 };
