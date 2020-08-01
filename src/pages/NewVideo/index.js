@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import PageDefault from '../../components/PageDefault';
 import PageTitle from '../../components/PageTitle';
+import PageDescription from '../../components/PageDescription';
 import FormField from '../../components/FormField';
 import Button from '../../components/Button';
 import useForm from '../../hooks/useForm';
@@ -11,6 +12,7 @@ import categoriesRepository from '../../repositories/categories';
 function NewVideo() {
   const initialValues = {
     category: '',
+    categoryId: '',
     title: '',
     url: '',
   };
@@ -18,7 +20,7 @@ function NewVideo() {
   const history = useHistory();
   const [categories, setCategories] = useState([]);
   const categoryTitles = categories.map(({ label }) => label);
-  const { handleChange, values } = useForm(initialValues);
+  const { handleChange, clearForm, values } = useForm(initialValues);
 
   useEffect(() => {
     categoriesRepository
@@ -33,6 +35,9 @@ function NewVideo() {
       <PageTitle>
         <h1>New Video</h1>
       </PageTitle>
+      <PageDescription>
+        Got a new video to share? Add it to our library by filling out the form bellow:
+      </PageDescription>
 
       <form onSubmit={(event) => {
         event.preventDefault();
@@ -41,15 +46,16 @@ function NewVideo() {
           return category.label === values.category;
         });
 
-        videosRepository.createNewVideo({
-          categoryId: chosenCategory.id,
-          title: values.title,
-          url: values.url,
-        })
-          .then(() => {
-            console.log('Cadastrou com sucesso!');
-            history.push('/');
-          });
+        if (chosenCategory !== undefined) {
+          videosRepository.createNewVideo({
+            categoryId: chosenCategory.id,
+            title: values.title,
+            url: values.url,
+          })
+            .then(() => {
+              history.push('/');
+            });
+        }
       }}
       >
         <FormField
@@ -77,7 +83,11 @@ function NewVideo() {
         <Button solid big type="submit">
           Save
         </Button>
+        <Button big className="greyButton" onClick={clearForm}>Clear</Button>
       </form>
+      <PageDescription>
+        Couldn&apos;t find the proper category for your video?
+      </PageDescription>
 
       <Button solid as={Link} to="/register/category">New Category</Button>
     </PageDefault>

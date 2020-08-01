@@ -13,10 +13,15 @@ const Button = styled.button`
     text-decoration: none;
     display: inline-block;
     transition: opacity .3s;
+    margin-right: 10px;
 
     &:hover,
     &:focus {
     opacity: .5;
+    }
+
+    &.greyButton {
+      background-color: var(--grayLight);
     }
 
     background: ${(props) => (props.solid ? 'var(--primary)' : 'transparent')};

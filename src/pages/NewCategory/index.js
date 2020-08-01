@@ -45,21 +45,23 @@ function NewCategory() {
       <form onSubmit={function handleSubmit(changeInfo) {
         changeInfo.preventDefault();
 
-        setCategories([
-          ...categories,
-          values,
-        ]);
+        if (values.color !== '#000000') {
+          setCategories([
+            ...categories,
+            values,
+          ]);
 
-        categoriesRepository.createNewCategory({
-          label: values.label,
-          description: values.description,
-          color: values.color,
-        })
-          .then(() => {
-            console.log('Cadastrou com sucesso!');
-          });
+          categoriesRepository.createNewCategory({
+            label: values.label,
+            description: values.description,
+            color: values.color,
+          })
+            .then(() => {
+              console.log('Cadastrou com sucesso!');
+            });
 
-        clearForm();
+          clearForm();
+        }
       }}
       >
         <FormField
@@ -87,6 +89,7 @@ function NewCategory() {
         <Button solid big type="submit">
           Save
         </Button>
+        <Button big className="greyButton" onClick={clearForm}>Clear</Button>
       </form>
 
       <h2>Registered Categories:</h2>
