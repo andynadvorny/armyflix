@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../../assets/img/Logo.png';
+import MobileMenu from '../MobileMenu';
 import Button from '../Button';
 import './Header.css';
 
@@ -32,6 +33,7 @@ function Header({ pageColor }) {
         <Link to="/">
           <img className="Logo" src={Logo} alt="armyflix styled purple logo" />
         </Link>
+        <MobileMenu />
         <ul className="PrimaryMenu">
           <li><Link to="/" className="active">Home</Link></li>
           <li><Link to="/">Music Videos</Link></li>
@@ -39,7 +41,7 @@ function Header({ pageColor }) {
           <li><Link to="/">Run BTS</Link></li>
         </ul>
       </div>
-      <Button as={Link} className="ButtonLink" to="/register/video">
+      <Button as={Link} className="ButtonLink" to="/register/video" adaptable>
         Add Video
       </Button>
     </header>

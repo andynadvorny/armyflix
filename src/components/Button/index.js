@@ -22,6 +22,12 @@ const Button = styled.button`
     background: ${(props) => (props.solid ? 'var(--primary)' : 'transparent')};
     padding: ${(props) => (props.big ? '12px 16px' : '8px 12px;')};
     min-width: ${(props) => (props.big ? '98px' : '')};
+    font-size: ${(props) => (props.adaptable ? '13px' : '14px')};
+
+    @media (max-width: 740px) {
+      padding: ${(props) => (props.adaptable ? '6px 10px' : '8px 12px;')};
+      font-size: ${(props) => (props.adaptable ? '12px' : '14px')};
+    }
 `;
 
 export default Button;
