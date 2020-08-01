@@ -25,7 +25,7 @@
       "description": "Mixtape MVs and Lyric Videos posted on BigHit and BANGTAN TV channels."
     },
     {
-      "id": 1,
+      "id": 5,
       "label": "Dance Practices",
       "color": "#63037e",
       "description": "Offical dance practice videos from the BANGTAN TV channel."
@@ -242,7 +242,6 @@
       "title": "Serendipity",
       "url": "https://www.youtube.com/watch?v=BEMaH9Sm3lQ"
     },
-
     {
       "id": 36,
       "categoryId": 2,

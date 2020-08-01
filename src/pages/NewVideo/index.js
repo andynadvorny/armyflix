@@ -1,31 +1,32 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useHistory } from 'react-router-dom';
 import PageDefault from '../../components/PageDefault';
 import PageTitle from '../../components/PageTitle';
 import FormField from '../../components/FormField';
 import Button from '../../components/Button';
+import useForm from '../../hooks/useForm';
+import videosRepository from '../../repositories/videos';
+import categoriesRepository from '../../repositories/categories';
 
 function NewVideo() {
   const initialValues = {
+    category: '',
     title: '',
-    videolink: '',
-    thumbnail: '',
+    url: '',
   };
-  const [newVideoData, setVideoData] = useState(initialValues);
 
-  function setNewVideo(key, value) {
-    setVideoData({
-      ...newVideoData,
-      [key]: value,
-    });
-  }
+  const history = useHistory();
+  const [categories, setCategories] = useState([]);
+  const categoryTitles = categories.map(({ label }) => label);
+  const { handleChange, values } = useForm(initialValues);
 
-  function handleChange(changeInfo) {
-    setNewVideo(
-      changeInfo.target.getAttribute('name'),
-      changeInfo.target.value,
-    );
-  }
+  useEffect(() => {
+    categoriesRepository
+      .getAll()
+      .then((categoriesFromServer) => {
+        setCategories(categoriesFromServer);
+      });
+  }, []);
 
   return (
     <PageDefault>
@@ -33,30 +34,47 @@ function NewVideo() {
         <h1>New Video</h1>
       </PageTitle>
 
-      <form>
+      <form onSubmit={(event) => {
+        event.preventDefault();
+
+        const chosenCategory = categories.find((category) => {
+          return category.label === values.category;
+        });
+
+        videosRepository.createNewVideo({
+          categoryId: chosenCategory.id,
+          title: 'values.title',
+          url: 'values.url',
+        })
+          .then(() => {
+            console.log('Cadastrou com sucesso!');
+            history.push('/');
+          });
+      }}
+      >
         <FormField
           label="Title"
           type="text"
           name="title"
-          value={newVideoData.title}
+          value={values.title}
           onChange={handleChange}
         />
         <FormField
-          label="Video Link"
+          label="Video URL"
           type="text"
-          name="videolink"
-          value={newVideoData.videolink}
+          name="url"
+          value={values.url}
           onChange={handleChange}
         />
         <FormField
-          label="Thumbnail Link"
-          type="text"
-          name="thumbnail"
-          value={newVideoData.thumbnail}
+          label="Category"
+          name="category"
+          value={values.category}
           onChange={handleChange}
+          suggestions={categoryTitles}
         />
 
-        <Button solid big>
+        <Button solid big type="submit">
           Save
         </Button>
       </form>

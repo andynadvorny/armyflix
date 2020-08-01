@@ -5,7 +5,7 @@ import './index.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import NewVideo from './pages/NewVideo';
-import NewCategory from'./pages/NewCategory';
+import NewCategory from './pages/NewCategory';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -16,5 +16,5 @@ ReactDOM.render(
       <Route component={() => (<div>Página 404</div>)} />
     </Switch>
   </BrowserRouter>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );

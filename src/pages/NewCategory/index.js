@@ -4,6 +4,7 @@ import PageTitle from '../../components/PageTitle';
 import PageDescription from '../../components/PageDescription';
 import FormField from '../../components/FormField';
 import Button from '../../components/Button';
+import useForm from '../../hooks/useForm';
 
 function NewCategory() {
   const initialValues = {
@@ -11,22 +12,10 @@ function NewCategory() {
     description: '',
     color: '#000000',
   };
+
+  const { handleChange, values, clearForm } = useForm(initialValues);
+
   const [categories, setCategories] = useState([]);
-  const [newCategoryData, setCategoryData] = useState(initialValues);
-
-  function setNewCategory(key, value) {
-    setCategoryData({
-      ...newCategoryData,
-      [key]: value,
-    });
-  }
-
-  function handleChange(changeInfo) {
-    setNewCategory(
-      changeInfo.target.getAttribute('name'),
-      changeInfo.target.value,
-    );
-  }
 
   useEffect(() => {
     const URL = window.location.hostname.includes('localhost')
@@ -46,7 +35,7 @@ function NewCategory() {
       <PageTitle>
         <h1>
           Create Category:
-          {newCategoryData.label}
+          {values.label}
         </h1>
       </PageTitle>
       <PageDescription>
@@ -56,34 +45,35 @@ function NewCategory() {
         changeInfo.preventDefault();
         setCategories([
           ...categories,
-          newCategoryData.label,
+          values,
         ]);
-        setCategoryData(initialValues);
+
+        clearForm();
       }}
       >
         <FormField
           label="Category Name"
           type="text"
           name="label"
-          value={newCategoryData.label}
+          value={values.label}
           onChange={handleChange}
         />
         <FormField
           label="Description"
           type="textarea"
           name="description"
-          value={newCategoryData.description}
+          value={values.description}
           onChange={handleChange}
         />
         <FormField
           label="Color"
           type="color"
           name="color"
-          value={newCategoryData.color}
+          value={values.color}
           onChange={handleChange}
         />
 
-        <Button className="lightBG">
+        <Button solid big type="submit">
           Save
         </Button>
       </form>
