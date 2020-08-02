@@ -36,9 +36,9 @@ function Header({ pageColor }) {
         <MobileMenu />
         <ul className="PrimaryMenu">
           <li><Link to="/" className="active">Home</Link></li>
-          <li><Link to="/">Music Videos</Link></li>
-          <li><Link to="/">BU MVs</Link></li>
-          <li><Link to="/">Run BTS</Link></li>
+          <li><Link to="/comeback-trailers">Comeback Trailers</Link></li>
+          <li><Link to="/bu-videos">BU MVs</Link></li>
+          <li><Link to="/solo-songs">Solo Songs</Link></li>
         </ul>
       </div>
       <Button as={Link} className="ButtonLink" to="/register/video" adaptable>

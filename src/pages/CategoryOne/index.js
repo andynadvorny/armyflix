@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import Header from '../../components/Header';
-import BannerMain from '../../components/BannerMain';
+import PageCategory from '../../components/PageCategory';
 import Carousel from '../../components/Carousel';
+import BannerMain from '../../components/BannerMain';
 import SiteLoader from '../../components/Loaders/SiteLoader';
-import Footer from '../../components/Footer';
 import categoriesRepository from '../../repositories/categories';
+import './CategoryOne.css';
 
-function Home() {
+function CategoryOne() {
   const [initialData, setInitialData] = useState([]);
 
   useEffect(() => {
@@ -17,8 +17,7 @@ function Home() {
   }, []);
 
   return (
-    <div>
-      <Header />
+    <PageCategory>
 
       {initialData.length === 0 && <SiteLoader />}
 
@@ -27,14 +26,14 @@ function Home() {
           return (
             <div key={category.id}>
               <BannerMain
-                videoTitle={initialData[0].videos[0].title}
-                url={initialData[0].videos[0].url}
-                videoDescription="A celebration of 7 years since the BTS debut, We Are Bulletproof: the Eternal is a beautifully animated MV that shows the BTS mombers going through different eras and the varied stages of their career until the present moment."
-                bgUrl='https://i.ytimg.com/vi/7UWBYJjuIL0/maxresdefault.jpg'
+                videoTitle={initialData[1].videos[0].title}
+                url={initialData[1].videos[0].url}
+                videoDescription="Outro: Ego finalizes the Map Of The Soul series with a funky yet deep dive into self acceptance."
+                bgUrl='https://i.pinimg.com/originals/80/09/16/800916ee43e79d07b99fafe5e4aed04b.png'
               />
               <Carousel
                 ignoreFirstVideo
-                category={initialData[0]}
+                category={initialData[1]}
               />
             </div>
           );
@@ -47,10 +46,8 @@ function Home() {
           />
         );
       })}
-
-      <Footer />
-    </div>
+    </PageCategory>
   );
 }
 
-export default Home;
+export default CategoryOne;

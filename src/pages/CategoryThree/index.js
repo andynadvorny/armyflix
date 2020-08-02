@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import Header from '../../components/Header';
-import BannerMain from '../../components/BannerMain';
+import PageCategory from '../../components/PageCategory';
 import Carousel from '../../components/Carousel';
+import BannerMain from '../../components/BannerMain';
 import SiteLoader from '../../components/Loaders/SiteLoader';
-import Footer from '../../components/Footer';
 import categoriesRepository from '../../repositories/categories';
+import './CategoryThree.css';
 
-function Home() {
+function CategoryThree() {
   const [initialData, setInitialData] = useState([]);
 
   useEffect(() => {
@@ -17,8 +17,7 @@ function Home() {
   }, []);
 
   return (
-    <div>
-      <Header />
+    <PageCategory>
 
       {initialData.length === 0 && <SiteLoader />}
 
@@ -27,14 +26,14 @@ function Home() {
           return (
             <div key={category.id}>
               <BannerMain
-                videoTitle={initialData[0].videos[0].title}
-                url={initialData[0].videos[0].url}
-                videoDescription="A celebration of 7 years since the BTS debut, We Are Bulletproof: the Eternal is a beautifully animated MV that shows the BTS mombers going through different eras and the varied stages of their career until the present moment."
-                bgUrl='https://i.ytimg.com/vi/7UWBYJjuIL0/maxresdefault.jpg'
+                videoTitle={initialData[3].videos[0].title}
+                url={initialData[3].videos[0].url}
+                videoDescription="대취타 is the title track in Agust D's latest release D2. A powerful song that mixes classical Korean instruments and a trap beat with a video that is alone a feast for the eyes."
+                bgUrl="https://t1.daumcdn.net/cfile/tistory/99AECE485EC73CE630?download"
               />
               <Carousel
                 ignoreFirstVideo
-                category={initialData[0]}
+                category={initialData[3]}
               />
             </div>
           );
@@ -47,10 +46,8 @@ function Home() {
           />
         );
       })}
-
-      <Footer />
-    </div>
+    </PageCategory>
   );
 }
 
-export default Home;
+export default CategoryThree;
