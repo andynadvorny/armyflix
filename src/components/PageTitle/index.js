@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const TitleBanner = styled.section`
+const TitleBanner = styled.div`
     padding-top: 90px;
 
     > h1 {

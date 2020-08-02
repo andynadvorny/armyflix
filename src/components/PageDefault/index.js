@@ -1,7 +1,7 @@
 import React from 'react';
+import styled from 'styled-components';
 import Header from '../Header';
 import Footer from '../Footer';
-import styled from 'styled-components';
 
 const Main = styled.main`
     background-color: var(--white);
@@ -18,15 +18,15 @@ const Main = styled.main`
 `;
 
 function PageDefault({ children }) {
-    return (
-        <>
-            <Header pageColor="light"/>
-                <Main>
-                    {children}
-                </Main>
-            <Footer />
-        </>
-    );
+  return (
+    <>
+      <Header pageColor="light" />
+      <Main>
+        {children}
+      </Main>
+      <Footer />
+    </>
+  );
 }
 
 export default PageDefault;
