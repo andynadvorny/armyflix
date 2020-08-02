@@ -4,6 +4,7 @@ import PageTitle from '../../components/PageTitle';
 import PageDescription from '../../components/PageDescription';
 import FormField from '../../components/FormField';
 import Button from '../../components/Button';
+import CategoryTable from '../../components/CategoryTable';
 import useForm from '../../hooks/useForm';
 import categoriesRepository from '../../repositories/categories';
 
@@ -100,13 +101,28 @@ function NewCategory() {
         </div>
       )}
 
-      <ul>
+      <CategoryTable>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Color</th>
+          </tr>
+        </thead>
         {categories.map((category) => (
-          <li key={`${category.label}`}>
-            {category.label}
-          </li>
+          <tr>
+            <td key={`${category.label}`}>
+              {category.label}
+            </td>
+            <td key={`${category.label}`}>
+              {category.description}
+            </td>
+            <td>
+              <div className="colorBlock" style={{ backgroundColor: `${category.color}` }} />
+            </td>
+          </tr>
         ))}
-      </ul>
+      </CategoryTable>
     </PageDefault>
   );
 }

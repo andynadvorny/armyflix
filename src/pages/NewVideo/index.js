@@ -3,6 +3,7 @@ import { Link, useHistory } from 'react-router-dom';
 import PageDefault from '../../components/PageDefault';
 import PageTitle from '../../components/PageTitle';
 import PageDescription from '../../components/PageDescription';
+import Footnote from '../../components/Footnote';
 import FormField from '../../components/FormField';
 import Button from '../../components/Button';
 import useForm from '../../hooks/useForm';
@@ -42,9 +43,7 @@ function NewVideo() {
       <form onSubmit={(event) => {
         event.preventDefault();
 
-        const chosenCategory = categories.find((category) => {
-          return category.label === values.category;
-        });
+        const chosenCategory = categories.find((category) => category.label === values.category);
 
         if (chosenCategory !== undefined) {
           videosRepository.createNewVideo({
@@ -85,11 +84,12 @@ function NewVideo() {
         </Button>
         <Button big className="greyButton" onClick={clearForm}>Clear</Button>
       </form>
-      <PageDescription>
-        Couldn&apos;t find the proper category for your video?
-      </PageDescription>
-
-      <Button solid as={Link} to="/register/category">New Category</Button>
+      <Footnote>
+        Couldn&apos;t find the right category for your video? Create a
+        {' '}
+        <Link to="/register/category">New Category</Link>
+        .
+      </Footnote>
     </PageDefault>
   );
 }

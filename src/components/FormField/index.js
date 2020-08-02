@@ -39,7 +39,7 @@ const Input = styled.input`
   background: var(--white);
   color: var(--black);
   display: block;
-  width: 500px;
+  width: min(500px, 100%);
   height: 48px;
   font-size: 16px;
   

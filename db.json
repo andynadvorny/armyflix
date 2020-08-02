@@ -3,31 +3,31 @@
     {
       "id": 1,
       "label": "Official MVs",
-      "color": "#63037e",
+      "color": "#BA5BE7",
       "description": "Videos denominated Offical MVs on BigHit's channel."
     },
     {
       "id": 2,
       "label": "Comeback Trailers",
-      "color": "#63037e",
+      "color": "#A811EF",
       "description": "Intros, Interludes and Outros denominated as Comeback Trailers on the BigHit channel."
     },
     {
       "id": 3,
       "label": "BU Videos",
-      "color": "#63037e",
+      "color": "#7304A7",
       "description": "MVs, trailers and short-films that are a part of the BTS Universe."
     },
     {
       "id": 4,
       "label": "Mixtapes & Solo Songs",
-      "color": "#63037e",
+      "color": "#5A0184",
       "description": "Mixtape MVs and Lyric Videos posted on BigHit and BANGTAN TV channels."
     },
     {
       "id": 5,
       "label": "Dance Practices",
-      "color": "#63037e",
+      "color": "#8f1791",
       "description": "Offical dance practice videos from the BANGTAN TV channel."
     }
   ],

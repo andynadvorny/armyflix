@@ -38,6 +38,6 @@ export const VideoCardContainer = styled.a`
   &:hover,
   &:focus {
     opacity: .5;
+    border: 1px solid var(--primary);
   }
 `;
-
