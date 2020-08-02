@@ -40,3 +40,10 @@ code {
   display: flex;
   flex-direction: column;
 }
+
+.subTitle {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 24px;
+  margin-top: 50px;
+}

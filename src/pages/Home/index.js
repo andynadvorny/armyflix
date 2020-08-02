@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Header from '../../components/Header';
 import BannerMain from '../../components/BannerMain';
 import Carousel from '../../components/Carousel';
-import SiteLoader from '../../components/SiteLoader';
+import SiteLoader from '../../components/Loaders/SiteLoader';
 import Footer from '../../components/Footer';
 import categoriesRepository from '../../repositories/categories';
 

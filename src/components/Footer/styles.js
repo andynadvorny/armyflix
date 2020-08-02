@@ -11,7 +11,7 @@ export const FooterBase = styled.footer`
     color: var(--secondary);
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 480px) {
     margin-bottom: 50px;
   }
 `;

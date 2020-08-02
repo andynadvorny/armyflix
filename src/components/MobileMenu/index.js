@@ -5,6 +5,8 @@ import styled from 'styled-components';
 const Arrow = styled.div`
   margin-left: 20px;
   color: var(--white);
+  padding-bottom: 5px;
+  opacity: .7;
 
   i {
     cursor: pointer;

@@ -1,21 +1,30 @@
 import styled from 'styled-components';
 
 const CategoryTable = styled.table`
-  border: 1px solid var(--tertiary);
+  border-bottom: 1px solid var(--grayLight);
   border-collapse: collapse;
-  font-size: 15px;
+  font-size: 14px;
+  text-align: left;
 
   th, td {
-    border: 1px solid var(--grayLight);
+    border-bottom: 1px solid var(--grayLight);
   }
 
-  td {
+  td, th {
     padding: 5px;
+  }
+
+  th {
+    font-size: 15px;
+  }
+
+  tr:not(:first-child):hover {
+    background-color: #00000005;
   }
 
   .colorBlock {
     border-radius: 4px;
-    width: 30px;
+    width: 40px;
     height: 25px;
   }
 `;

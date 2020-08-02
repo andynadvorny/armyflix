@@ -5,6 +5,7 @@ import PageDescription from '../../components/PageDescription';
 import FormField from '../../components/FormField';
 import Button from '../../components/Button';
 import CategoryTable from '../../components/CategoryTable';
+import PageLoader from '../../components/Loaders/PageLoader';
 import useForm from '../../hooks/useForm';
 import categoriesRepository from '../../repositories/categories';
 
@@ -93,12 +94,10 @@ function NewCategory() {
         <Button big className="greyButton" onClick={clearForm}>Clear</Button>
       </form>
 
-      <h2>Registered Categories:</h2>
+      <h2 className="subTitle">Registered Categories:</h2>
 
       {categories.length === 0 && (
-        <div>
-          Loading...
-        </div>
+        <PageLoader />
       )}
 
       <CategoryTable>
